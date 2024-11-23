@@ -74,6 +74,7 @@ def demoStereoSGBM():
     dp.computeDepthMapSGBM()
 
 if __name__ == "__main__":
+    #descomentar la funcion a usar
     demoStereoSGBM()
     # demoStereoBM()
     # demoViewPics()
