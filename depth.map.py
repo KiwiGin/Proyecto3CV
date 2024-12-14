@@ -75,6 +75,6 @@ def demoStereoSGBM():
 
 if __name__ == "__main__":
     #descomentar la funcion a usar
-    demoStereoSGBM()
-    # demoStereoBM()
+    # demoStereoSGBM()
+     demoStereoBM()
     # demoViewPics()
