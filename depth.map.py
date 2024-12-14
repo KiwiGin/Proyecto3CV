@@ -25,7 +25,7 @@ class DepthMap:
             plt.show()
 
     def computeDepthMapBM(self):
-        nDispFactor = 1  # Número de disparidades a considerar
+        nDispFactor = 10  # Número de disparidades a considerar
         stereo = cv.StereoBM.create(numDisparities=16 * nDispFactor, blockSize=21)
         disparity = stereo.compute(self.imgLeft, self.imgRight)
         plt.imshow(disparity, cmap='gray')
@@ -75,6 +75,6 @@ def demoStereoSGBM():
 
 if __name__ == "__main__":
     #descomentar la funcion a usar
-    demoStereoSGBM()
-    # demoStereoBM()
+    # demoStereoSGBM()
+     demoStereoBM()
     # demoViewPics()
